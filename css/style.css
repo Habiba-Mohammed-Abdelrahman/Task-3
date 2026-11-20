@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/war-conflict-landscape-with-soldiers-fighting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -150px;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 40%;
+    margin: 150px 7px;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+img{
+    width: 100%; 
+    transition-duration: 0.5s;
+    
+}
+
+button{
+    color: white;
+    background-color: rgb(110, 59, 161);
+    padding: 10px 35px;
+    border-radius: 25px;
+    border-style: none;
+    margin-top: 35px;
+    margin-bottom: 190px;
+    transform: translateY(-100px);
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+h2{
+    background-color: rgb(110, 59, 161);
+
+}
+
+p{
+    background-color: rgba(0, 0, 0, 0.605);
+    font-size:x-small;
+    padding: 30px;
+}
+
+#p1{
+    padding: 36px;
+
+}
+.h2p1{
+    transform: translateX(700px);
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.h2p2{
+    transform: translateY(200px);
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.layer:hover {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.layer:hover button{
+    transform: translateY(0);
+}
+
+.layer:hover .h2p1{
+    transform: translateX(0);
+
+}
+
+.layer:hover .h2p2{
+    transform: translateY(0);
+
+}
+
+
+.card:hover img{
+   transform: scale(1.3);
+    
+
+}
+
